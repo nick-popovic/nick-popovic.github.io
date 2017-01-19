@@ -1,0 +1,177 @@
+
+
+Footer:
+=======
+
+Copyright 2016. Alset Consulting Ltd. All rights reserved.
+
+
+About Alset Consulting Ltd.:
+=============================
+
+Alset Consulting Ltd. is a privately owned Canadian technology company that provides software 
+and consulting services mostly, but not limited to financial and brokerage industry since
+incorporation in 1995.
+
+We specialize in solutions for accessing all Canadian real time market data and NBBO (National Best Bid & Offer)
+feeds, DMA (Direct Market Access), consolidated fills and orders drop copies, various broker/dealer generic and
+customized reports, trader workstations and data visualization.
+
+Our solutions are primarily based (but not limited to) on the following technologies: C/C++/Java/Python in Windows/Linux/Unix environments, 
+TCP/IP, client/server, scriptig, GUI, Data Extraction/Harvesting/Visualization, RDBMS/SQL etc.
+
+
+Past Clients/Projects: ( add logo next to name )
+======================
+
+Integrated Transaction Systems Ltd.
+Developped and enhanced numerous multithreaded client/server/report real time and batch applications to support and access ITS
+market data and NBBO feeds (using STAMP and FIX protocols), DMA, workstation, reports etc.:
+- MBX ( Market by Price, Order, Broker) Server
+- TOB (Trader Order Book) server   
+- CCDF (Canadian Consolidated Data Feed) server
+- Graph server ( supporting workstation intra-day and historical graphing, corporate actions )
+- News server ( supporting multiple workstation news feeds )
+- Trading engine simulator
+- TriAct feed reader/processor
+- Varuous feed readers, mergers, splitters, converters
+- Feed multiplexers
+- Reuters RMDS feed converter/publisher
+- CTF(Comstock Token Format) NYSE/AMEX/NASDAQ feed reader and multiplexer
+- Various trading reports
+- FIX drop copy processors
+- STAMP/FIX converters
+- Various backend ITS tools and process management applications
+
+NCM List Services
+Multiple web data mining, extraction and harvesting projects to support NCM's Canadian and US government mailing lists.
+
+TD Securities
+Redesign and development of the web enabled trading system to support trading, administration and risk management
+functions of the New York Credit Derivatives Book. (mostly total return loan and bond swaps)
+Design of a J2EE compliant TD Common Application Framework to support several redesigned internal applications
+to be run on Weblogic application server. 
+Complete analysis and redesign of the Blocklist infomation system (management of client's intentions to trade large blocks of shares). 
+
+Nortel Networks
+Full cycle design, modifications and troubleshooting of BIM/BCM (Baan Interface Manager/Baan Communication Module) 
+layer of software which integrates Nortel's manufacturing operations supported by Baan IVb with its
+legacy financial systems (primarily Oracle Financials) at multiple international sites.
+
+Citibank Canada
+Design, implementation and testing of changes to end-to-end pricing, risk management and processing 
+system for debt derivatives products (Swaps, Swaptions, FRAs, Long Term FX, Caps/Collars etc.) 
+due to pending introduction of the new Euro currency by the European Monetary Union, on January 1, 1999.
+
+Toronto Stock Exchange (TMX)
+Architecture, design and implementation, modifications, troubleshooting and documentation for wide variety of in-house client/server software products used by Market Surveillance users:
+Real time data feed ( TBF and CCDF) reader, distribution processes and database loaders
+Real time alert (price, volume, etc.) system: clients, servers, GUI, and batch processes.
+News reader client, filters and GUI
+Investigation management client, GUI and server.
+Equity trade and quote history client, GUI and server.
+
+Visible Decisions Inc.
+Development, testing and porting the software for risk visualization and trading analytics in the securities industry.
+Visualization of market and credit risk on large fixed income, equity or derivative inventories.
+Trading floor (NYSE, TSE, S&P 500 etc.) 3D real time visualization.
+
+Numetrix Ltd.
+Design and implementation of the high profile interactive GUI for the large production planning (scheduling) software package (Schedulex®). 
+
+Atlantis Aerospace Corp.
+Software development for advanced aircraft flight management system trainers.(Boeing 767/747 and Airbus A320) 
+Created complex touch screen GUI in QNX windowing (Open Look), multi-user, multitasking, networked real time environment.
+Designed and realized an in-house GUI prototyping tool for quick generation of interactive screens. 
+Also created a higher level windows library and window manager to fulfill some special project requirements: 
+dynamic screen switching, extra large touch screen objects, memory conservation etc. Implementation of the password security system 
+and real time flight plan display.
+
+ 
+Products:
+=========
+
+MarketWatch ( add link to separate page with all pictures and text )
+
+MarketWatch is Java client application used by active traders. 
+It connects to ITS (Integrated Transaction Systems, itsys.ca ) servers where all the data shown is in real time, directly from the exchanges.
+Currently, it is intended only for the real-time visualization of Canadian stock market and generation of trading ideas mostly for intra-day trading.
+There are plans to use it as a supplement to ITS’s offering
+of professional trader workstations  with or without direct market access (order entry).
+
+http://itsys.ca/traderlite.html
+http://itsys.ca/traderlite-gui.html
+http://itsys.ca/hybrid.html
+http://itsys.ca/solutions.html
+
+Some of the main functionality is listed below:
+
+• “Market View” selection chooser in main “heatmap” window determines which symbols are displayed: ( those can additionally be filtered in a Heatmap Settings dialog )
+
+	o	TSX ( whole TSX, up to 2300+ symbols, all at once )
+	o	Venture ( Whole Toronto Venture Exchange )
+	o	CNQ Listed stocks
+	o	TSX Comp. ( all S&P/TSX Composite Index stocks, about 240 of them )
+	o	Financials (only belonging to index)
+	o	Energy (only belonging to index)
+	o	Materials (only belonging to index)
+	o	Industrials (only belonging to index)
+	o	Utilities  (only belonging to index)
+	o	Health Care (only belonging to index)
+	o	Real Estate (only belonging to index)
+	o	Technology (only belonging to index)
+	o	Telecom (only belonging to index)
+	o	Consumers Discretionary (only belonging to index)
+	o	Consumers Staples (only belonging to index)
+	o	ETFs
+
+•To switch from heatmap to bar view, use “Bar Overview” tab: This view shows the same symbols as in a heat map but with four attributes at once: 
+
+	o	positive Y axis shows accumulated volume
+	o	negative Y axis shows accumulated number of trades
+	o	color shows net % price change
+	o	position of the bar on X axis shows sorting ( high to low is left to right) by  dividend yield, market capitalization, Beta, P/E and P/B. Hovering mouse over bars brings up floating detail window.
+
+•“Recent Most Active by % Change” is updated every 20 seconds and shows highest price gains/losses within that period. It can pinpoint to symbols with increasing activity ( by volume, number of trades or rate of price increase/decrease )
+
+Further filtering (on top of the above, by market)  is possible by:
+•	current trade price
+•	dividend yield
+•	ex-dividend date ( today or up to 7 days into the future )
+•	new 52 highs
+•	new 52 week lows
+•	stocks with news
+
+Anything (symbols) on any of the screens can be selected which opens a detailed screen for that symbol (or index).
+Also are provided simple portfolio and alert management, news from three sources ( Newswire, Marketwired and Stockwatch) and real time PL (Profit/Loss) tracking including
+settings for automatic/manual trailing stops.
+
+Any kind of customization is possible as ITS has access to real time data (including level 2 (market depth)) from all Canadian exchanges.
+Some features planned for the future development:
+•	Market visualization in the pre-open: bid/ask, Calculated Opening Price (COP) etc.
+•	Server side detection of short term upward/downward price/volume/number of trades trends in the whole market and corresponding visualization
+•	Broker involvement levels on bid/ask sides (in volume or number of trades) by symbol
+•	Automatic intra-day trading (entry/exit) strategies based on custom set criteria, real time data and technical indicators. 
+
+
+Contact:
+========
+
+Address:
+
+Alset Consulting Ltd.
+227 The Westway
+Toronto, Ontario, M9R 1E9
+Canada
+
+Phone:
+(416) 994-2652
+
+E-mail:
+davor.popovic@gmail.com
+
+
+
+
+
+

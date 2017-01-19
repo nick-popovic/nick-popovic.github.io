@@ -2,57 +2,240 @@
 
 <html>
 	
+	<!-- info about webpage-->
 	<head>
 		<title> Alset Consulting Ltd. </title>
 		<link rel="stylesheet" href="./css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
 
+	
+	
 	<body>
 
-		<!-- header info (logo and/or greeting -->
-		<header>
-			<img id="logo" src="./images/alset_logo.BMP" alt="Alset Consulting Ltd. Logo" style="width:auto;height:auto;display:block;">
-		</header>
+	
+		<!-- vertical-left navigation area -->
+		<nav>
+			<ul>
+				<li><a class="active" href="#about">About Us</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#customers">Past Clients</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
-		<!-- horizontal navigation bar -->
 		
-		<ul class="nav">
-			<li> <a href="#"> Hor-Link One </a>
-			</li>
-			<li> <a href="#"> Hor-Link Two </a>
-				<ul class="submenu">
-					<li> <a href="#"> Hor-Sub1 </a></li>
-					<li> <a href="#"> Hor-Sub2 </a></li>
-					<li> <a href="#"> Hor-Sub3 </a></li>
-				</ul>
-				
-			</li>
-			<li> <a href="#"> Hor-Link Three </a>
-			</li>
-			<li> <a href="#"> Hor-Link Four </a>
-			</li>
+		
+		<!-- primary article section: all web content goes here! -->
+		<article id="main_article">
+		
 			
-		</ul>
-		
-		<p style="clear:left;border-style: solid;border-color: green;margin-top: 5px;">this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		this is some stupid text that nobody cares about.
-		</p>
-		
-		
-		
-		
+			<header>
+				<img id="header_logo" src="./images/alset_logo.BMP" alt="Alset Consulting Logo">
+			</header>
+			
+			
+			<h1 id="welcome">Welcome to Alset Consulting Ltd.</h1>
+			
+			<!-- about us section -->
+			<section id="about">
+				<h2> About Us</h2>
+				<p>
+					Alset Consulting Ltd. is a privately owned Canadian technology company that provides software 
+					and consulting services mostly, but not limited to financial and brokerage industry since
+					incorporation in 1995.
+				</p>
+				<p>
+					We specialize in solutions for accessing all Canadian real time market data and NBBO (National Best Bid & Offer)
+					feeds, DMA (Direct Market Access), consolidated fills and orders drop copies, various broker/dealer generic and
+					customized reports, trader workstations and data visualization.
+				</p>
+				<p>
+					Our solutions are primarily based (but not limited to) on the following technologies: C/C++/Java/Python in Windows/Linux/Unix environments, 
+					TCP/IP, client/server, scriptig, GUI, Data Extraction/Harvesting/Visualization, RDBMS/SQL etc.
+				</p>
+			</section>
+			
+			<!-- products section -->
+			<section id="products">
+				<h2> Products </h2>
+				<h3> Market Watch </h3>
+				<p>MarketWatch is Java client application used by active traders. 
+					It connects to ITS (Integrated Transaction Systems, itsys.ca ) servers where all the data shown is in real time, directly from the exchanges.
+					Currently, it is intended only for the real-time visualization of Canadian stock market and generation of trading ideas mostly for intra-day trading.
+					There are plans to use it as a supplement to ITS's offering
+					of professional trader workstations  with or without direct market access (order entry).</p>
+				
+				<figure class="alset_product">
+					<img class="alset_product_image" src="./images/MW001.png" alt="Alset Consulting IMG" >
+					<figcaption>Recommended monitor configuration.</figcaption>
+				</figure>
+				
+				<figure class="alset_product">
+					<img class="alset_product_image" src="./images/MW002.png" alt="Alset Consulting IMG">
+					<figcaption>The whole TSX/S&P composite index market view grouped by sectors</figcaption>
+				</figure>
+				
+				<figure class="alset_product">
+					<img class="alset_product_image" src="./images/MW003.png" alt="Alset Consulting IMG" >
+					<figcaption>The TSX/S&P Energy sector market bar view.</figcaption>
+				</figure>
+				
+				<figure class="alset_product">
+					<img class="alset_product_image" src="./images/MW005.png" alt="Alset Consulting IMG" >
+					<figcaption>Intra day ("Trading view") chart</figcaption>
+				</figure>
+			</section>
+
+			
+			
+			
+			
+			
+			
+			
+			<!-- past clients section -->
+			<section id="customers">
+				<h2> Past Clients/Projects </h2>
+				<h3> Below are just a few of our past clients:</h3>
+				
+				<figure class="alset_customer">
+					<img id="ITS" class="alset_customer_image" src="./images/its.gif" alt="Alset Consulting customer IMG" >
+					<figcaption>Developped and enhanced numerous multithreaded client/server/report real time and batch applications to support and access ITS
+								market data and NBBO feeds (using STAMP and FIX protocols), DMA, workstation, reports etc.:
+								<br>
+								<ul>
+									<li>MBX ( Market by Price, Order, Broker) Server</li>
+									<li>TOB (Trader Order Book) server</li>
+									<li>CCDF (Canadian Consolidated Data Feed) server</li>
+									<li>Graph server ( supporting workstation intra-day and historical graphing, corporate actions ) </li>
+									<li>News server ( supporting multiple workstation news feeds )</li>
+									<li>Trading engine simulator</li>
+									<li> TriAct feed reader/processor</li>
+									<li> Varuous feed readers, mergers, splitters, converters</li>
+									<li> Feed multiplexers</li>
+									<li> Reuters RMDS feed converter/publisher</li>
+									<li> CTF(Comstock Token Format) NYSE/AMEX/NASDAQ feed reader and multiplexer</li>
+									<li> Various trading reports</li>
+									<li>FIX drop copy processors</li>
+									<li> STAMP/FIX converters</li>
+									<li> Various backend ITS tools and process management applications</li>
+								</ul>
+					</figcaption>
+				</figure>
+				
+				<figure class="alset_customer">
+					<img id="TD" class="alset_customer_image" src="./images/td_securities.png" alt="Alset Consulting customer IMG" >
+					<figcaption>
+						<br>
+						<ul>
+							<li>Redesign and development of the web enabled trading system to support trading, administration and risk management
+								functions of the New York Credit Derivatives Book. (mostly total return loan and bond swaps)</li>
+							<li>Design of a J2EE compliant TD Common Application Framework to support several redesigned internal applications
+								to be run on Weblogic application server.</li>
+							<li>Complete analysis and redesign of the Blocklist infomation system (management of client's intentions to trade large blocks of shares).</li>
+						</ul>
+									
+					</figcaption>
+				</figure>
+				
+				<figure class="alset_customer">
+					<img class="alset_customer_image" src="./images/tmx.png" alt="Alset Consulting customer IMG" >
+					<figcaption>
+						Architecture, design and implementation, modifications, troubleshooting and documentation for wide variety of in-house client/server software products used by Market Surveillance users:<br>
+						<ul>
+							<li>Real time data feed ( TBF and CCDF) reader, distribution processes and database loaders</li>
+							<li>Real time alert (price, volume, etc.) system: clients, servers, GUI, and batch processes.</li>
+							<li>News reader client, filters and GUI</li>
+						</ul>
+					</figcaption>
+				</figure>
+				
+				<figure class="alset_customer">
+					<img class="alset_customer_image" src="./images/citibank2.png" alt="Alset Consulting customer IMG" >
+					<figcaption>Design, implementation and testing of changes to end-to-end pricing, risk management and processing 
+								system for debt derivatives products (Swaps, Swaptions, FRAs, Long Term FX, Caps/Collars etc.) 
+								due to pending introduction of the new Euro currency by the European Monetary Union, on January 1, 1999.
+					</figcaption>
+				</figure>
+			
+			
+			
+			
+				<figure class="alset_customer">
+					<img class="alset_customer_image" src="./images/nortel.png" alt="Alset Consulting customer IMG" >
+					<figcaption>Full cycle design, modifications and troubleshooting of BIM/BCM (Baan Interface Manager/Baan Communication Module) 
+								layer of software which integrates Nortel's manufacturing operations supported by Baan IVb with its
+								legacy financial systems (primarily Oracle Financials) at multiple international sites.
+					</figcaption>
+				</figure>
+				
+				<figure class="alset_customer">
+					<img class="alset_customer_image" src="./images/ncm.png" alt="Alset Consulting customer IMG" >
+					<figcaption>Multiple web data mining, extraction and harvesting projects to support NCM's Canadian and US government mailing lists.</figcaption>
+				</figure>
+			
+			
+			<figure class="alset_customer">
+					<img class="alset_customer_image" src="./images/atlantis.gif" alt="Alset Consulting customer IMG" >
+					<figcaption>
+						<br>
+						<ul>
+							<li>Software development for advanced aircraft flight management system trainers.(Boeing 767/747 and Airbus A320)</li>
+							<li>Created complex touch screen GUI in QNX windowing (Open Look), multi-user, multitasking, networked real time environment.</li>
+							<li>Designed and realized an in-house GUI prototyping tool for quick generation of interactive screens.</li>
+							<li>Also created a higher level windows library and window manager to fulfill some special project requirements: 
+								dynamic screen switching, extra large touch screen objects, memory conservation etc</li>
+							<li>Implementation of the password security system 
+								and real time flight plan display.</li>
+						</ul>
+									
+					</figcaption>
+				</figure>
+			
+			
+			
+			
+			</section>
+
+			
+			<br><br>
+			
+			<h2> Contact Us </h2>
+			<address id="contact">
+				<p>
+					<br>
+					Alset Consulting Ltd.     <br>
+					227 The Westway           <br>
+					Toronto, Ontario, M9R 1E9 <br>
+					Canada                    <br>
+
+					<br>
+					Phone:
+					(416) 994-2652 <br>
+
+					<br>
+					E-mail:
+					<a href="mailto:davor.popovic@gmail.com">Davor Popovic</a> (davor.popovic@gmail.com) <br>
+				</p>
+			</address>
+			
+			
+			
+			<br><br><br>
+			<footer>
+			Developed by Nicholas A. Popovic (c2popovi) <br>
+			Copyright 2016. Alset Consulting Ltd. All rights reserved. <br>
+				<a>
+					<img class="footer_img" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+				</a>
+				<a>
+					<img class="footer_img" src="http://www.vaporetto.gr/images/html5-validated.png" alt="Valid HTML!" />
+				</a>
+			</footer>
+			
+		</article>
 		
 		
 	</body>
