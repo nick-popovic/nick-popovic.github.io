@@ -9,14 +9,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<style>
                 div.img {
-                    margin: 5px;
+                    margin: 10px;
                     border: 1px solid #ccc;
-                    display: table-cell;
-                    width: 180px;
+                    #display: table-cell;
+                    #display: grid;
+                    width: 580px;
                 }
 
                 div.img:hover {
-                    border: 1px solid #777;
+                    border: 3px solid #777;
                 }
 
                 div.img img {
@@ -26,14 +27,13 @@
 
                 div.desc {
                     padding: 15px;
-                    text-align: center;
+                    text-align: left;
                 }
-                </style>
-		
+          </style>      
+                		
 	</head>
 
-
-	
+    	
 	
 	<body>
 
@@ -41,10 +41,11 @@
 		<!-- vertical-left navigation area -->
 		<nav>
 			<ul>
-				<li><a class="active" href="./index.html#about">About Us</a></li>
-				<li><a href="./marketwatch.html#products">Products</a></li>
-				<li><a href="./index.html#customers">Past Clients</a></li>
-				<li><a href="./index.html#contact">Contact</a></li>
+				<li><a class="active" href="./index.html">Home</a></li>
+				<li><a href="./about.html">About Us</a></li>
+				<li><a href="./marketwatch.html">Products</a></li>
+				<li><a href="./customers.html">Past Clients</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -55,56 +56,103 @@
 		
 			
 			<header>
-				<img id="header_logo" src="./images/alset_logo.BMP" alt="Alset Consulting Logo">
+				<img id="header_logo" src="./images/alset_logo.jpg" alt="Alset Consulting Logo">
 			</header>
 			
-			
-			<h1 id="welcome">Welcome to Alset Consulting Ltd.</h1>
-			
-			
-			
+					
 			<!-- products section -->
-			<section id="products">
+			
 				<h2> Featured Product </h2>
-				<h3> MarketWatch </h3>
-				<p>MarketWatch is Java client application used by active traders. 
-					It connects to ITS (Integrated Transaction Systems, itsys.ca ) servers where all the data shown is in real time, directly from the exchanges.
-					Currently, it is intended only for the real-time visualization of Canadian stock market and generation of trading ideas mostly for intra-day trading.
-					There are plans to use it as a supplement to ITS's offering
-					of professional trader workstations  with or without direct market access (order entry).</p>
+				<h1> MarketWatch </h1>
+				<p>MarketWatch is Java client application designed for use by active traders. <br>
+					It connects to ITS (Integrated Transaction Systems, http://www.itsys.ca ) servers where all the data shown <br>
+					is in real time, directly from the exchanges. Currently, it is intended only for the real-time visualization <br>
+					of Canadian stock market and generation of trading ideas mostly for intra-day trading. There are plans to <br>
+					use it as a supplement to ITS's offering of professional trader workstations with direct market access (order entry).</p>
 				
 				<div class="img">
-				    <a target="_blank" href="./images/MW001.png">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MW001.png">
 					<img src="./images/MW001.png" alt="Alset Consulting IMG" ></a>
 					<div class="desc">Recommended monitor configuration.</div>
 				</div>
 				
 				<div class="img">
-				    <a target="_blank" href="./images/MW002.png">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MW002.png">
 					<img src="./images/MW002.png" alt="Alset Consulting IMG"></a>
-					<div class="desc">The whole TSX/S&P composite index market view grouped by sectors</div>
+					<div class="desc">The whole TSX/S&P composite index market (approx. 240 symbols) view grouped by sectors.
+					Each symbol's rectangle size denotes intra-day traded volume while the color is proportional to price change.
+					<br><br>Heatmap appearance settings:
+					<ul>
+                    <li>Rectangle Size:  Accumulated number of trades or volume ( since opening, last 3 or 6 minutes ), percent volume change of average, market capitalization, dividend yield, MOC</li>
+                    <li>Rectangle Color: Net % or $ price change (since opening, last 3 or 6 minutes )</li>
+                    <li>Refresh Type (Heatmap): Automatic, Manual</li>
+                    <li>Refresh Interval for automatic refresh type: 20 seconds, 1 minute, 5 minutes</li>
+                    <li>Appearance: 3D “pillow”, plain rectangle</li>
+                    <li>Border: with or without border</li>
+                    </ul>
+
+                    <br>Filters:
+                    <ul>
+                    <li>Price Range</li>
+                    <li>Dividend Yield range</li>
+                    <li>Symbols with news</li>
+                    <li>Symbols hitting 52 week highs/lows</li> 
+                    <li>Symbols with Ex-Dividend date today or up to 7 days from today</li>
+                    </ul>
+
+                    <br>Switch:
+                    <ul>
+                    <li>Group symbols by sectors</li>
+                    </ul>
+
+					</div>
 				</div>
 				
 				<div class="img">
-				    <a target="_blank" href="./images/MW003.png">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MW003.png">
 					<img src="./images/MW003.png" alt="Alset Consulting IMG" ></a>
-					<div class="desc">The TSX/S&P Energy sector market bar view.</div>
+					<div class="desc">The TSX/S&P Energy sector market bar view.
+					Showing accumulated volumes  (+Y axis), trades (-Y axis), net percent price changes (color), sorted by number of trades (X axis) ( Also available sorting by dividend yield, net percent change, accumulated volume, P/E,  P/B, Beta, Market Cap. )
+					</div>
 				</div>
 				
 				<div class="img">
-				    <a target="_blank" href="./images/MW005.png">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/venture.jpg">
+					<img src="./images/venture.jpg" alt="Alset Consulting IMG" ></a>
+					<div class="desc">The whole Toronto Venture market view - only the symbols which traded: ( rectangle size shows accumulated number of trades, color net percent price change )
+					</div>
+				</div>
+				
+				<div class="img">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MW005.png">
 					<img src="./images/MW005.png" alt="Alset Consulting IMG" ></a>
-					<div class="desc">Intra day ("Trading view") chart</div>
+					<div class="desc">Intra day ("Trading view") chart
+					Comprenhensive intra-day real time view of selected symbol:
+					    <ul>
+                        <li>intra-day price graph with 5, 10 and 20 min SMA, </li>
+                        <li>volume/number of trades bars</li>
+                        <li>intra-day volume level as % of average within last 30 days</li>
+                        <li>qoute with 10 level MBP</li>
+                        <li>last five trades and tick direction</li> 
+                        <li>P/L scale with current position</li>
+                        <li>volume by price levels</li>
+                        <li>yesterday's close and trailing stop levels</li>
+                        <li>52 week high/low, dividend yield, EX-Dividend date, EPS, P/E, Beta</li>
+                        <li>latest news headline (not shown)</li>
+                        <li>direct graphical price level ($ or %) comparisson/measurement (not shown)</li>
+                        <li>direct graphical alert level settings for bid, ask and last price levels (not shown)</li>
+                        </ul>
+                    </div>
 				</div>
 				
 				<div class="img">
-				    <a target="_blank" href="./images/MOC.jpg">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MOC.jpg">
 					<img src="./images/MOC.jpg" alt="Alset Consulting IMG" ></a>
-					<div class="desc">MOC (Market On Close) view of buy/sell imbalances: ( grouped by sectors, blue: buy side, red: sell side, rectangle size is representing volume. Available after 3:40 PM during trading hours )</div>
+					<div class="desc">MOC (Market On Close) view of buy/sell imbalances: ( grouped by sectors, blue: buy side, red: sell side, rectangle size is representing volume. Available after 3:40 PM )</div>
 				</div>
 					
 				<div class="img">	
-				    <a target="_blank" href="./images/MBP.jpg">		
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MBP.jpg">		
 					<img src="./images/MBP.jpg" alt="Alset Consulting IMG" ></a>
 					<div class="desc">Graphical representation of market by price ( "MBP", 10 levels )
 					<br>Also shown:
@@ -123,7 +171,7 @@
 				</div>
 					
 				<div class="img">	
-				    <a target="_blank" href="./images/MBO.jpg">		
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/MBO.jpg">		
 				    <img src="./images/MBO.jpg" alt="Alset Consulting IMG" ></a>
 					<div class="desc">Graphical representation of market by order ( "MBO", 10 levels )
 					<br>Also shown:
@@ -142,20 +190,11 @@
 				</div>
 							
 				<div class="img">
-				    <a target="_blank" href="./images/News.jpg">
+				    <a target="_blank" href="http://www.alsetconsulting.ca/images/News.jpg">
 					<img src="./images/News.jpg" alt="Alset Consulting IMG" ></a>
-					<div class="desc">All News view, can be filtered by news sources:</div>
+					<div class="desc">News view - can be filtered by news sources: Newswire, MarketWired and StockWatch</div>
 				</div>
 				
-				
-				
-			</section>
-
-						
-			
-			
-			
-			
 			
 			
 			
