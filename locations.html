@@ -7,6 +7,7 @@
 <button onclick="getLocation()">Try It</button>
 
 <p id="demo"></p>
+<p id="user_agent"></p>
 
 <script>
 var x = document.getElementById("demo");
@@ -21,7 +22,8 @@ function getLocation() {
 
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
+    "<br>Longitude: " + position.coords.longitude +
+    "<br>Agent: " + navigator.userAgent;
 }
 </script>
 
